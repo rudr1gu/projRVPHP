@@ -1,0 +1,11 @@
+{
+    "name": "admin/telade-login",
+    "require": {
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Admin\\TeladeLogin\\": "src/"
+        }
+    }
+}
