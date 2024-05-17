@@ -1,12 +1,133 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --cor1:#00747C;
+    --cor2:#00BBC9;
+    --cor3:#CACACA;
+    --cor4:#878787;
+    --cor5:#202022;
 }
 
 body, html{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor5);
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    text-align: center;
+    color: var(--cor4);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section.formulario{
+    background-color: var(--cor4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    min-height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+div.input{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+div.input>span{
+    position: absolute;
+    right: 0;
+    top:14px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.input input {
+    width: 350px;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #aaa;
+    transition: all 0.3s ease-in-out;
+}
+
+div.input>label{
+    position: absolute;
+    top:16px;
+    left: 0;
+    font-size: 0.9em;
+    margin-left:15px;
+}
+
+.input input:focus{
+    border:none;
+    outline: none;
+}
+
+.input input:focus + label,
+.input input:valid + label {
+    top: -15px;
+    font-size: 0.8em;
+    color: var(--cor5);
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="reset"], input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor2);
+    box-shadow: 4px 4px 5px var(--cor5);
+    color: var(--cor5);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    font-weight: 900;
+    transition: 1s;
+    box-shadow: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--cor4);
+}
