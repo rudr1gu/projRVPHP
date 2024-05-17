@@ -6,10 +6,24 @@
     <title>Tela Login</title>
 </head>
 <body>
-    <?php 
-    echo 'Olá mundo';
-    require_once "./controller/main.php";
-    ?>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <aside>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </aside>
+    <main>
+        <?php
+            include_once "./controller/main.php";
+        ?>
+    </main>
+    <footer>
+        <p>Todos os direitos reservado</p>
+    </footer>
     
 </body>
 </html>

@@ -5,7 +5,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Admin\\TeladeLogin\\": "src/"
+            "App\\": "src/"
         }
     }
 }

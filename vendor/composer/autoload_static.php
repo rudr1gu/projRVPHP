@@ -9,12 +9,12 @@ class ComposerStaticInitc67946762eb72454c0375f642e78f4ab
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
-            'Admin\\TeladeLogin\\' => 18,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Admin\\TeladeLogin\\' => 
+        'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
